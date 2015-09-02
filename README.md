@@ -71,21 +71,21 @@ sendevent /dev/input/event2 1 107 1;
 sleep 1;
 sendevent /dev/input/event2 1 107 0;
 sleep 1;
-sendevent /dev/input/event1 3 53 50;      << here is start x=50
-sendevent /dev/input/event1 3 54 330;     << here is start y=330
+sendevent /dev/input/event1 3 53 50;      <= here is start x=50
+sendevent /dev/input/event1 3 54 330;     <= here is start y=330
 sendevent /dev/input/event1 3 48 1;
 sendevent /dev/input/event1 3 50 52;
 sendevent /dev/input/event1 0 2 0;
 sendevent /dev/input/event1 0 0 0;
 
-sendevent /dev/input/event1 3 53 300;     << here is finish x=300
-sendevent /dev/input/event1 3 54 330;     << here is finish y=330
+sendevent /dev/input/event1 3 53 300;     <= here is finish x=300
+sendevent /dev/input/event1 3 54 330;     <= here is finish y=330
 sendevent /dev/input/event1 3 48 1;
 sendevent /dev/input/event1 3 50 66;
 sendevent /dev/input/event1 0 2 0;
 sendevent /dev/input/event1 0 0 0;
 
-sendevent /dev/input/event1 3 53 0;       << this block required to finish swipe
+sendevent /dev/input/event1 3 53 0;       <= this block required to finish swipe
 sendevent /dev/input/event1 3 54 0;
 sendevent /dev/input/event1 3 48 0;
 sendevent /dev/input/event1 3 50 0;
