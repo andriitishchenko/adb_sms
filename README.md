@@ -100,7 +100,7 @@ exit;
 Enter PIN 
 ````
 adb -s S5660a5eda6fb shell << !
-input text 0000;
+input text 0000;                   <= this is pin for unlock
 sleep 1;
 input keyevent 66;
 sleep 1;
