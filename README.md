@@ -36,11 +36,14 @@ add device 3: /dev/input/event2
 ^C
 
 ````
+
 Convert hex to dec:
+````
 0001 = 1
 006b = 107
 00000001 = 1
 00000000 = 0
+````
 
 Power button event looks like this
 ````
