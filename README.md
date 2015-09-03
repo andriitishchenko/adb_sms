@@ -18,17 +18,17 @@ List of devices attached
 S5660a5eda6fb	device    <<<this is my device connected over USB
 ````
 
-Lets find touch events
+Lets find our events
 ````
  $ adb -s S5660a5eda6fb shell getevent
 add device 1: /dev/input/event4
   name:     "magnetic_sensor"
 add device 2: /dev/input/event3
   name:     "accelerometer_sensor"
-add device 3: /dev/input/event2     <<<< here is it
+add device 3: /dev/input/event2     <<<< this is physical buttons
   name:     "sec_key"
 add device 4: /dev/input/event1    
-  name:     "sec_touchscreen"
+  name:     "sec_touchscreen"       <<<< this is screen buttons, swipes, touches
 add device 5: /dev/input/event0
   name:     "sec_jack"
 ^C
