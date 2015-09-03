@@ -3,7 +3,7 @@ Sumsung s5660 (320 x 480)
 
 
 ````
->$./sms.sh "+380686513841" "Hey lalal! SMS lalala"
+ $./sms.sh "+380686513841" "Hey lalal! SMS lalala"
 
 ````
 
@@ -20,7 +20,7 @@ S5660a5eda6fb	device    <<<this is my device connected over USB
 
 Lets find touch events
 ````
- adb -s S5660a5eda6fb shell getevent
+ $ adb -s S5660a5eda6fb shell getevent
 add device 1: /dev/input/event4
   name:     "magnetic_sensor"
 add device 2: /dev/input/event3
@@ -60,7 +60,7 @@ sendevent /dev/input/event2 1 107 0;  // release
 
 Unlock
 ````
-adb -s S5660a5eda6fb shell << !
+$ adb -s S5660a5eda6fb shell << !
 sendevent /dev/input/event2 1 107 1;
 sleep 1;
 sendevent /dev/input/event2 1 107 0;
@@ -73,7 +73,7 @@ exit;
 
 Slider Unlock
 ````
-adb -s S5660a5eda6fb shell << !
+$ adb -s S5660a5eda6fb shell << !
 sendevent /dev/input/event2 1 107 1;
 sleep 1;
 sendevent /dev/input/event2 1 107 0;
@@ -106,7 +106,7 @@ exit;
 
 Enter PIN 
 ````
-adb -s S5660a5eda6fb shell << !
+$ adb -s S5660a5eda6fb shell << !
 input text 0000;                   <= this is pin for unlock
 sleep 1;
 input keyevent 66;
