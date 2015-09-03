@@ -8,10 +8,7 @@ Sumsung s5660 (320 x 480)
 ````
 
 
-
-Unlocking the phone configured as Power then Left_Option
-
-> adb shell input keyevent not works for me so I unlock the phone with "sendevent"
+> adb shell input keyevent 26 not works for me so I unlock the phone with "sendevent"
 
 > adb shell service call isms not works too
 
