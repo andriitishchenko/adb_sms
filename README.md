@@ -58,7 +58,7 @@ sendevent /dev/input/event2 1 107 1;  // press
 sendevent /dev/input/event2 1 107 0;  // release
 ````
 
-Unlock
+Unlock (Power, Menu button)
 ````
 $ adb -s S5660a5eda6fb shell << !
 sendevent /dev/input/event2 1 107 1;
@@ -71,7 +71,7 @@ exit;
 !
 ````
 
-Slider Unlock
+Slider Unlock (Power, slide to right)
 ````
 $ adb -s S5660a5eda6fb shell << !
 sendevent /dev/input/event2 1 107 1;
